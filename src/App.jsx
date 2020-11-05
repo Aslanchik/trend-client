@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {Icon} from "semantic-ui-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -31,6 +32,12 @@ const App = () => {
     <PrivateRoute exact path="/myPosts" component={MyPosts}/>
     <Route path="*" component={NotFound}/>
     </Switch>
+    <footer>
+      <div className="socialIconsWrapper">
+                <a className="socialIcons" href="https://github.com/Aslanchik/weathr" rel="noreferrer" target="_blank"><Icon name="github"/></a>
+                <a className="socialIcons" href="https://www.linkedin.com/in/aslan-badalov" rel="noreferrer" target="_blank"><Icon name="linkedin"/></a>
+                </div>
+    </footer>
     </BrowserRouter>
     </AuthProvider>
   );

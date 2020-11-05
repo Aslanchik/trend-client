@@ -15,3 +15,21 @@
     font-weight: 300;
   }
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: -20;
+  .socialIconsWrapper {
+    position: fixed;
+    bottom: 0;
+    .socialIcons {
+      font-size: 3rem;
+      color: $PURPLE;
+      &:hover {
+        color: $LIGHT_PURPLE;
+      }
+    }
+  }
+}

@@ -20,6 +20,7 @@ footer {
   z-index: -20;
   .socialIconsWrapper {
     position: fixed;
+    z-index: inherit;
     bottom: 0;
     .socialIcons {
       font-size: 3rem;

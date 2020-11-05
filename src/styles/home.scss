@@ -12,20 +12,3 @@
     font-weight: 300;
   }
 }
-
-footer {
-  display: flex;
-  flex-direction: row;
-  .socialIconsWrapper {
-    position: fixed;
-    bottom: 0;
-    .socialIcons {
-      margin-right: -8px;
-      font-size: 2.5rem;
-      color: $PURPLE;
-      &:hover {
-        color: $LIGHT_PURPLE;
-      }
-    }
-  }
-}

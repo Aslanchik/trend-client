@@ -1,5 +1,5 @@
 import React,{useContext, useState} from 'react';
-import {Container, Menu, Popup} from "semantic-ui-react";
+import {Container, Icon, Menu, Popup} from "semantic-ui-react";
 import {Link} from "react-router-dom";
 
 import {AuthContext} from "../../context/authContext"
@@ -33,7 +33,7 @@ const Navbar = () => {
             as={Link}
             className="myPostsMenuLink"
             to="/myPosts"
-          />}/>
+            />}/>
             <Menu.Item
               name='logout'
               active={activeItem === 'logout'}
@@ -42,6 +42,7 @@ const Navbar = () => {
           </Menu.Menu>
           ):(
           <Menu.Menu position='right'>
+            
               <Menu.Item
             name='login'
             active={activeItem === 'login'}
@@ -59,6 +60,13 @@ const Navbar = () => {
           />
           </Menu.Menu>
           )}
+          <Popup content="Check out the code!" inverted className="pink" trigger={<Menu.Item 
+            name="github"
+            as='a'
+            rel="noreferrer" target="_blank"
+            className="githubSocialLink"
+            href="https://github.com/Aslanchik/trend-client"
+          ><Icon name="github"/></Menu.Item>}/>
           </Container>
         </Menu>
      );

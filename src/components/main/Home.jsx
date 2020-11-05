@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {useQuery} from "@apollo/client";
-import {Grid, Container} from "semantic-ui-react";
+import {Grid, Container, Image} from "semantic-ui-react";
 
 import PostCard from "../posts/PostCard";
 import {AuthContext} from "../../context/authContext"
@@ -21,7 +21,7 @@ const Home = () => {
       {user ? 
       <>
       <Grid.Column data-aos="fade-in">
-        <img src="/img/add_post.svg" alt="add post" className="addPostImg"/>
+        <Image src="/img/add_post.svg" size='medium' centered alt="add post illustration" className="addPostImg" data-aos="fade-right"/>
       </Grid.Column>
         <Grid.Column width={10} data-aos="fade-in">
           <PostForm/>

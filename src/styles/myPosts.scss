@@ -11,3 +11,13 @@
     margin-top: 50px !important;
   }
 }
+
+.postPageCardAvatar {
+  display: none !important;
+}
+
+@media only screen and(max-width:768px) {
+  .postPageCardAvatar {
+    display: block !important;
+  }
+} ;

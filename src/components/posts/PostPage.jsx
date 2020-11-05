@@ -54,9 +54,9 @@ const PostPage = (props) => {
         <Spinner size="huge"/>
     )
       : 
-      ( <Grid data-aos="fade-in" >
+      ( <Grid stackable doubling data-aos="fade-in" >
         <Grid.Row centered>
-            <Grid.Column width={1} data-aos="fade-right">
+            <Grid.Column width={2} data-aos="fade-right" only="tablet computer">
             <Image floated='left'
           size='small'
           src='/img/female_avatar.svg'/>
@@ -65,6 +65,9 @@ const PostPage = (props) => {
             <Grid.Column width={10} >
                 <Card fluid centered>
                     <Card.Content>
+                        <Image className="postPageCardAvatar" floated='right'
+          size='mini'
+          src='/img/female_avatar.svg'/>
                         <Card.Header>{username}</Card.Header>
                         <Card.Meta>{moment(createdAt).fromNow()}</Card.Meta>
     <Card.Description>{body}</Card.Description>
